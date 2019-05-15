@@ -12,7 +12,8 @@
     links:
       - postgres
     env:
-      DRONE_HOST: "{{drone_host}}"
+      DRONE_SERVER_PROTO: "http"
+      DRONE_SERVER_HOST: "{{drone_host}}"
       DRONE_SERVER_ADDR: ":8000"
       DRONE_DEBUG: "true"
       DRONE_SECRET: "{{drone_secret}}"
